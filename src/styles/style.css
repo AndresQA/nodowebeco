@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-image: url("/src/imgs/fondo.png");
+    background-position: center center;
+
+    /* Para que la imagen de fondo no se repita */
+
+    background-repeat: no-repeat;
+
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 100vh;
+  
+
+}
+
+.fondo{
+    background-image: url("/src/imgs/fondohome.png");
+    background-position: center center;
+
+    /* Para que la imagen de fondo no se repita */
+
+    background-repeat: no-repeat;
+
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 70px;
+    justify-content: space-between;
+
+}
+
+.logo {
+    text-align: left;
+    margin: auto 0;
+
+}
+
+.logout {
+    margin-top: 20px;
+}
+
+.logout button {
+    cursor: pointer;
+}
+
+.logo__home {
+    color: #FFBE64;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.login {
+    width: 340px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    color: #fff;
+    margin: auto;
+    margin-top: 90px;
+    align-items: center;
+}
+
+.menunav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: auto;
+}
+
+nav ul li {
+    float: left;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    margin: auto;
+    display: block;
+    /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 5px;
+    color: #898686;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #4CBF9D;
+    ;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.seleccionado {
+    background: #4CBF9D;
+    ;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+
+
+.login button {
+    width: 50%;
+}
+
+
+button {
+    background: #fff;
+    font-size: 18px;
+    color: #6DE9CD;
+    border: 1px solid #B0BEC5;
+    box-sizing: border-box;
+    border-radius: 18px;
+    width: 177px;
+    height: 40px;
+
+}
+
+
+.inputicon {
+    position: relative;
+    width: 100%;
+}
+
+.inputicon img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+input {
+    border-color: #979797;
+    border-style: none;
+    height: 24px;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.padre {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.seccion__usuario {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(314.23deg, #81E8DC -38.29%, #42E3BD 0.65%, #45E3BE 23.2%, #84ECE6 60.09%), #44AD74;
+
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+@media (max-width: 1130px){
+    .contenido{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcion__despacho{
+        margin-top: 50px;
+    }
+
+ 
+
+}
+
+.imguser {
+    margin: 30px 0;
+    color: white;
+}
+
+.nav {
+    margin: 20px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    margin-left: 60px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.menu img {
+    width: 26px;
+    margin-right: 20px;
+}
+
+.menu__reservas {
+    color: white;
+    margin-left: 28px;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+
+}
+
+.menu__reservas img {
+    width: 35px;
+}
+
+.muesca {
+    position: absolute;
+    right: -2px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.ico{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.tabla {
+
+    width: 70%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.reservas {
+    width: 100%;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+    opacity: 0.85;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background: #FFFFFF;
+    opacity: 0.85;
+    /* Black/Lightest */
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+
+
+}
+
+.espacioa {
+    margin-top: 10px;
+}
+
+.fila div {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+.fila div p {
+    text-align: end;
+}
+
+.despacho {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.opcion__despacho {
+    margin-left: 20px;
+    height: 400px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.solicitudes {
+    color: rgb(29, 29, 29);
+}
+
+hr {
+    margin-top: 10px;
+}
+
+.pendiente {
+    color: yellow;
+}
+
+.rechazado {
+    color: red;
+}
+
+.aprobado {
+    color: #44AD74;
+}
+
+
+
+.seleccion {
+    background: lightgreen;
+
+}
+
+.seleccion:hover {
+    cursor: pointer;
+}
+
+.despachoview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.despachoview div {
+    margin: 8px 0;
+}
+
+.despachoview div button {
+    margin: 8px 0;
+}
+
+#negar {
+    color: red;
+}

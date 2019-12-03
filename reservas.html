@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rengy</title>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/animate.css">
+</head>
+
+<body class="fondo" style="display: none;">
+
+
+    <div class="padre">
+
+        <div class="seccion__usuario">
+
+            <div class="imguser animated bounceInLeft">
+                <img src="/src/imgs/profile_photo.png" alt="">
+                <h3>Justin</h3>
+            </div>
+
+            <div class="nav animated bounceInLeft">
+                <div class="menu">
+                    <img src="/src/imgs/notificaciones.png" alt="">
+                    <p>Notificaciones</p>
+                </div>
+
+                <div class="menu menu__reservas">
+                    <img src="/src/imgs/reservas.png" alt="">
+                    <p class=""><strong>reservas </strong> </p>
+                    <img class="muesca" src="/src/imgs/muesca.png" alt="">
+                </div>
+
+
+                <div class="menu">
+                    <img src="/src/imgs/calendario.png" alt="">
+                    <p>Calendario</p>
+                </div>
+
+                <div class="menu">
+                    <img src="/src/imgs/mensajes.png" alt="">
+                    <p>Mensajes</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="logout animated bounceInLeft">
+                <button onclick="logout()">Cerrar Sesión</button>
+            </div>
+
+        </div>
+
+        <div class="contenido">
+
+            <div class="tabla animated flipInX slow">
+                <div class="reservas">
+
+                    <div class="fila espacioa">
+                        <div><p>Nombre</p></div>
+
+                        <div><p>Email</p></div>
+
+                        <div><p>Fecha</p></div>
+
+                        <div><p>Producto</p></div>
+
+                        <div><p>Estado</p></div>
+                    </div>
+                    <hr>
+                    <div class="reservas-list"> </div>
+                </div>
+                
+            </div>
+
+            <div class="despacho animated flipInX slow">
+
+                <div id="current_selection" class="opcion__despacho">
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="/src/scripts/firebase.js"></script>
+    <script src="/src/scripts/reserva.js"></script>
+    <script src="/src/scripts/reservas.js"></script>
+
+    <script>
+    
+   function logout() {
+
+
+firebase.auth().signOut();
+location.href = "index.html";
+
+
+}
+</script>
+</body>
+
+</html>
